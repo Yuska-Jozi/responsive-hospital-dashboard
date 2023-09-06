@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dashboard</title>
+  <!-- Material CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img src="static/logo_01.jpg" height="40">
+          <h2>NA<span class="danger">SHE</span> HOSPITAL</h2>
+        </div>
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp">close</span>
+        </div>
+      </div>
+      <div class="sidebar">
+        <a href="#">
+          <span class="material-icons-sharp">
+dashboard
+</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="#" class="active">
+          <span class="material-icons-sharp">
+personal_injury
+</span>
+          <h3>Patients</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+medication
+</span>
+          <h3>Doctors</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+vaccines
+</span>
+          <h3>Medicines</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+precision_manufacturing
+</span>
+          <h3>Equipment</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+work_history
+</span>
+          <h3>Recent Events</h3>
+          <span class="events-count">13</span>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+summarize
+</span>
+          <h3>Explore Reports</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+insights
+</span>
+          <h3>Run Simulations</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+troubleshoot
+</span>
+          <h3>Analytics</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+edit_note
+</span>
+          <h3>Input Data</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+info
+</span>
+          <h3>About Us</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+logout
+</span>
+          <h3>Log out</h3>
+        </a>
+      </div>
+    </aside>
+    <!-------------- END OF ASIDE -------------->
+    <main>
+      <h1>Dashboard</h1>
+      <div class="date">
+        <input type="date">
+      </div>
+      <div class="insights">
+        <div class="visits">
+          <span class="material-icons-sharp">
+analytics
+</span>
+          <div class="middle">
+            <div class="left">
+              <h3>Quality of Care</h3>
+              <h1>103</h1>
+            </div>
+            <div class="progress">
+              <svg>
+                <circle cx='38' cy='38' r='36'></circle>
+              </svg>
+              <div class="number">
+                <p>91%</p>
+              </div>
+            </div>
+          </div>
+          <small class="text-muted">Positive outcomes MTD</small>
+        </div>
+        <!---------- END OF VISITS ---------->
+        <div class="occupancy">
+          <span class="material-icons-sharp">
+bar_chart
+</span>
+          <div class="middle">
+            <div class="left">
+              <h3>Cost of Care</h3>
+              <h1>ZAR88</h1>
+            </div>
+            <div class="progress">
+              <svg>
+                <circle cx='38' cy='38' r='36'></circle>
+              </svg>
+              <div class="number">
+                <p>62%</p>
+              </div>
+            </div>
+          </div>
+          <small class="text-muted">Avg bill per visit MTD</small>
+        </div>
+        <!---------- END OF OCCUPANCY ---------->
+        <div class="treated">
+          <span class="material-icons-sharp">
+stacked_line_chart
+</span>
+          <div class="middle">
+            <div class="left">
+              <h3>Access to Care</h3>
+              <h1>84</h1>
+            </div>
+            <div class="progress">
+              <svg>
+                <circle cx='38' cy='38' r='36'></circle>
+              </svg>
+              <div class="number">
+                <p>51%</p>
+              </div>
+            </div>
+          </div>
+          <small class="text-muted">New registrations MTD</small>
+        </div>
+        <!---------- END OF TREATED ---------->
+      </div>
+      <!---------- END OF INSIGHTS ---------->
+      <div class="performance-indicators">
+        <h2>Live Key Performance Indicators</h2>
+        <table>
+          <tread>
+            <tr>
+              <th>Area</th>
+              <th>KPI</th>
+              <th>UoM</th>
+              <th>Target</th>
+              <th>Actual</th>
+              <th>Indicator</th>
+            </tr>
+          </tread>
+          <tbody>
+            <tr>
+              <td>Registration</td>
+              <td>Average Wait Time</td>
+              <td>min</td>
+              <td>5.0</td>
+              <td>9.5</td>
+              <td class="danger">Too high</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Registration</td>
+              <td>Readmission Rate</td>
+              <td>%</td>
+              <td><2.0</td>
+              <td>1.3</td>
+              <td class="success">In spec</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Registration</td>
+              <td>User Rating</td>
+              <td>star</td>
+              <td>5.0</td>
+              <td>3.5</td>
+              <td class="warning">Average</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Admissions</td>
+              <td>Cumulative admissions today</td>
+              <td>patient</td>
+              <td>n/a</td>
+              <td>7</td>
+              <td class="">-</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>ICU</td>
+              <td>ICU admissions today</td>
+              <td>patient</td>
+              <td>n/a</td>
+              <td>0</td>
+              <td class="">-</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Wards</td>
+              <td>Occupied Beds vs Capacity</td>
+              <td>%</td>
+              <td><=85</td>
+              <td>34</td>
+              <td class="success">In Spec</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Wards</td>
+              <td>Average Length of Stay</td>
+              <td>day</td>
+              <td><=4.0</td>
+              <td>4.5</td>
+              <td class="warning">Too high</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Wards</td>
+              <td>Patients to Nurse Ratio</td>
+              <td>patient</td>
+              <td>6.0-10.0</td>
+              <td>5.5</td>
+              <td class="warning">Too low</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Dispensary</td>
+              <td>Prescription Fill Time</td>
+              <td>min</td>
+              <td><=5.0</td>
+              <td>3.5</td>
+              <td class="success">In Spec</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Dispensary</td>
+              <td>Inventory Cover</td>
+              <td>%</td>
+              <td>>=95</td>
+              <td>78</td>
+              <td class="danger">Too low</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Ambulances</td>
+              <td>Mean Response Time</td>
+              <td>min</td>
+              <td><=45</td>
+              <td>76</td>
+              <td class="danger">Too high</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Staff</td>
+              <td>Attendance</td>
+              <td>%</td>
+              <td>>=95</td>
+              <td>94</td>
+              <td class="warning">Too low</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Staff</td>
+              <td>Available Doctors</td>
+              <td>doctor</td>
+              <td>8-12</td>
+              <td>9</td>
+              <td class="success">In Spec</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Equipment</td>
+              <td>Mean Time To Repair</td>
+              <td>min</td>
+              <td>60</td>
+              <td>35</td>
+              <td class="success">In Spec</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Planning</td>
+              <td>Open Projects</td>
+              <td>project</td>
+              <td>-</td>
+              <td>3</td>
+              <td class="">-</td>
+              <td class="primary">Details</td>
+            </tr>           
+          </tbody>
+        </table>
+        <a href="#">Show All</a>      
+      </div>
+    </main>
+    <!---------- END OF MAIN ---------->
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-icons-sharp active">light_mode</span>
+          <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p>Hey, <b>Joseph</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="static/profile_06.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!---------- END OF TOP ---------->
+      <div class="recent-events">
+        <h2>Recent Events</h2>
+        <div class="events">
+          <div class="event">
+            <div class="profile-photo">
+              <img src="static/profile_01.jpg">
+            </div>
+            <div class="message">
+              <p>Patient <b>Mlungisi Ngema</b> discharged from ward B2</p>
+              <small class="text-muted">4 minutes ago</small>
+            </div>
+          </div>
+          <div class="event">
+            <div class="profile-photo">
+              <img src="static/profile_02.jpg">
+            </div>
+            <div class="message">
+              <p>Patient <b>Jozi Mwanza</b> joined Consultation queue</p>
+              <small class="text-muted">5 minutes ago</small>
+            </div>
+          </div>
+          <div class="event">
+            <div class="profile-photo">
+              <img src="static/profile_03.jpg">
+            </div>
+            <div class="message">
+              <p>Nurse <b>Bupe Mwanza</b> started her shift</p>
+              <small class="text-muted">11 minutes ago</small>
+            </div>
+          </div>
+          <div class="event">
+            <div class="profile-photo">
+              <img src="static/profile_05.jpg">
+            </div>
+            <div class="message">
+              <p>Artisan <b>Tom Jones</b> finished repairing wheelchair, equip_ID 23</p>
+              <small class="text-muted">1h 3 minutes ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------- END OF RECENT EVENTS --------->
+      <div class="leading-indicators">
+        <h2>Leading Indicators</h2>
+        <div class="item revenue">
+          <div class="icon">
+            <span class="material-icons-sharp">currency_yen</span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>REVENUE CYCLE TIME</h3>
+              <small class="text-muted">From bill to payment</small>
+            </div>
+            <h5 class="success">-12%</h5>
+            <h3>22 days</h3>
+          </div> 
+        </div>
+        <div class="item pathway-adherence">
+          <div class="icon">
+            <span class="material-icons-sharp">follow_the_signs</span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>PATHWAY ADHERENCE</h3>
+              <small class="text-muted">Last 30 days</small>
+            </div>
+            <h5 class="success">+6%</h5>
+            <h3>83%</h3>
+          </div>        
+        </div>
+        <div class="item energy-usage">
+          <div class="icon">
+            <span class="material-icons-sharp">power</span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>ENERGY USAGE</h3>
+              <small class="text-muted">Last 30 days</small>              
+            </div>
+            <h5 class="danger">-11%</h5>
+            <h3>121,365kWh</h3>
+          </div>
+        </div>
+        <div class="item add-patient">
+          <div>
+            <span class="material-icons-sharp">person_add_alt</span>          
+            <h3>Add Patient</h3>           
+          </div>
+        </div>
+      </div>
+      <!--------- END OF LEADING INDICATORS ------->
+    </div>
+    <!---------- END OF RIGHT ---------->
+  </div>
+  <script src="static/index.js"></script>
+</body>
+</html>
