@@ -92,6 +92,24 @@ KPIs = [
     'actual': 78,
     'indicator': 'Too Low',
     '': 'Details'
+  },
+  {
+    'area': 'Ambulances',
+    'kpi': 'Mean Response Time',
+    'uom': 'min',
+    'target': '<=45',
+    'actual': 76,
+    'indicator': 'Too High',
+    '': 'Details'
+  },
+  {
+    'area': 'Staff',
+    'kpi': 'Attendance',
+    'uom': '%',
+    'target': '>=95',
+    'actual': 94,
+    'indicator': 'Too Low',
+    '': 'Details'
   }
 ]
 
